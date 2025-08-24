@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  
+</head>
+<body>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  color:blue;
+}
+
+/* Hero */
+.hero {
+  background: url('images/banner.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 span {
+  color: #ff9800;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#btn{
+  padding-top: 150px;
+  margin-top:100px;
+}
+
+.btn:hover {
+  background: #e68900;
+}
+
+/* About */
+section {
+  padding: 4rem 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 30px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+}
+#about {
+  padding-top: 150px;   /* navbar height */
+  margin-top: -100px;
+}
+
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+ 
+
+}
+
+.skill {
+  background: #f4f4f4;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.skills h2{
+  font-size: 30px;
+}
+#skills {
+  padding-top: 150px;   /* navbar height */
+  margin-top: -100px;
+}
+
+/* Projects */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+#projects {
+  padding-top: 150px;   /* navbar height */
+  margin-top: -100px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+/* Contact */
+form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+.pro-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+  </style>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Pooja Dattatray Nikam</div>
+      <img src="pro.jpeg" alt="profile" class="pro-img">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Pooja Dattatray Nikam</h1>
+      <p>Frontend Developer | Web Designer | Coder</p>
+      <a href="https://www.linkedin.com/in/pooja-nikam-2004/" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate web developer with experience in creating responsive, attractive websites.
+      I love bringing designs to life and learning new technologies.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <img src="OIP.jpg" alt="c" width="130vw" height="130px">
+      <img src="c++.png" alt="cpp" width="120vw" height="120px">
+      <img src="html.png" alt="html" width="150vw" height="150px">
+    
+      <img src="css.png" alt="css" width="150vw" height="150px">
+      
+      <img src="js.png" alt="javascript" width="160vw" height="150px">
+      <img src="OIP (1).jpg" alt="react" width="150vw" height="150px">
+      <img src="OIP (2).jpg" alt="node" width="150vw" height="150px">
+      <img src="OIP (3).jpg" alt="mongo" width="150vw" height="150px">
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <img src="rest.png" alt="Project 1"/>
+        <h3>Project One</h3>
+        <p> It is my first project An engaging and visually appealing restaurant website that introduces visitors to the menu, ambiance, and special offers.</p>
+      </div>
+      <div class="card">
+        <img src="net.jpg" alt="Project 2"/>
+        <h3>Project Two</h3>
+        <p>It is my second project A visually accurate clone of Netflix’s homepage featuring dynamic content sections, responsive layout, and engaging UI.</p>
+      </div>
+      <div class="card">
+        <img src="Port.png" alt="Project 3"/>
+        <h3>Project Three</h3>
+        <p>It is my third project A modern, responsive portfolio website showcasing projects, skills, and contact information with smooth navigation and interactive elements.</p>
+      </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© Pooja Nikam. All Rights Reserved.</p>
+    <div><ul>
+  
+      <li><a href="https://www.linkedin.com/in/pooja-nikam-2004/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/PoojaNikam2004" target="_blank">Github</a></li>
+    </ul></div>
+    
+  </footer>
+
+  <script>
+    // Scroll animation for sections
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section");
+  const options = { threshold: 0.2 };
+
+  const reveal = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, options);  // <-- yaha observer close kelay
+
+  sections.forEach(sec => {
+    sec.classList.add("hidden");
+    reveal.observe(sec);
+  });
+
+  // Contact form submission
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thanks! Your message has been sent.");
+    e.target.reset();
+  });
+});
+app.get('/api/projects', (req, res) => {
+    res.json([
+        { title: "Portfolio Website", tech: "HTML, CSS, JS" },
+        { title: "To-Do App", tech: "React, Node.js" }
+    ])
+})
+
+
+  </script>
+</body>
+</html>
